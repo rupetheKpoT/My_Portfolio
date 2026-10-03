@@ -4,6 +4,17 @@ import { Badge } from "@/components/ui/badge"
 export function AboutSkills() {
   const skillCategories = [
     {
+      title: "Software Quality Testing",
+      skills: [
+        "Test Case Writing",
+        "Manual Testing",
+        "Smoke Testing",
+        "Black Box Testing",
+        "Bug Reporting",
+        "Selenium",
+      ],
+    },
+    {
       title: "Programming Languages",
       skills: [
         "Python",
@@ -13,15 +24,17 @@ export function AboutSkills() {
       ],
     },
     {
-      title: "Machine Learning & AI",
+      title: "Libraries, Frameworks & AI",
       skills: [
         "PyTorch",
         "Computer Vision",
         "Predictive Modeling",
         "Roboflow Inference SDK",
-        "Google GenAI",
-        "OpenAI",
-        "Gemini",
+        "Hugging Face Transformers",
+        "OpenCV",
+        "Pillow",
+        "Google Gen AI SDK",
+        "Flask",
       ],
     },
     {
@@ -35,34 +48,20 @@ export function AboutSkills() {
       ],
     },
     {
-      title: "Databases & Cloud",
+      title: "Databases",
       skills: [
         "Oracle",
         "MySQL",
         "MongoDB",
         "Firebase",
-        "Superbase",
-        "Google Cloud Vision",
-        "Azure",
+        "Supabase",
+      ],
+    },
+    {
+      title: "Cloud, DevOps & Project Management",
+      skills: [
+        "Microsoft Azure",
         "AWS",
-      ],
-    },
-    {
-      title: "Libraries & Frameworks",
-      skills: [
-        "OpenCV",
-        "Pillow",
-        "Pydantic",
-        "SHAP",
-        "PyMc",
-        "Flask",
-        "React.js",
-        "Express.js",
-      ],
-    },
-    {
-      title: "Project Management & Tools",
-      skills: [
         "Jira",
         "Asana",
         "Trello",

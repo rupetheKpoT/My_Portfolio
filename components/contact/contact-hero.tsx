@@ -14,7 +14,7 @@ export function ContactHero() {
           <span className="bg-gradient-to-r from-cyan-600 to-purple-600 bg-clip-text text-transparent">Touch</span>
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-          Ready to bring your ideas to life? Let's discuss how we can work together to create something amazing.
+          Have an internship opportunity or a project in software testing, data analytics, or AI? Let's discuss how I can contribute.
         </p>
       </div>
     </section>

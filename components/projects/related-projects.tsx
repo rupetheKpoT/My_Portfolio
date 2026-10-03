@@ -5,41 +5,14 @@ import { ExternalLink, Github } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
+import { portfolioProjects } from "@/lib/portfolio-projects"
+
 interface RelatedProjectsProps {
   currentProjectId: number
 }
 
 export function RelatedProjects({ currentProjectId }: RelatedProjectsProps) {
-  // This would typically fetch related projects from a database
-  const relatedProjects = [
-    {
-      id: 3,
-      title: "Portfolio Website",
-      description: "A responsive portfolio website showcasing creative projects with modern design.",
-      image: "/placeholder.svg?height=300&width=400&text=Portfolio+Website",
-      technologies: ["Next.js", "Tailwind CSS", "TypeScript"],
-      liveUrl: "#",
-      githubUrl: "#",
-    },
-    {
-      id: 4,
-      title: "Weather Dashboard",
-      description: "A beautiful weather dashboard with location-based forecasts and analytics.",
-      image: "/placeholder.svg?height=300&width=400&text=Weather+Dashboard",
-      technologies: ["React", "API Integration", "Chart.js"],
-      liveUrl: "#",
-      githubUrl: "#",
-    },
-    {
-      id: 5,
-      title: "Blog Platform",
-      description: "A modern blog platform with content management and social sharing features.",
-      image: "/placeholder.svg?height=300&width=400&text=Blog+Platform",
-      technologies: ["Next.js", "Prisma", "PostgreSQL"],
-      liveUrl: "#",
-      githubUrl: "#",
-    },
-  ]
+  const relatedProjects = portfolioProjects
     .filter((project) => project.id !== currentProjectId)
     .slice(0, 3)
 
@@ -63,18 +36,18 @@ export function RelatedProjects({ currentProjectId }: RelatedProjectsProps) {
                   className="w-full h-48 object-cover"
                 />
                 <div className="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center space-x-4">
-                  <Button size="sm" variant="secondary" asChild>
+                  {project.liveUrl && <Button size="sm" variant="secondary" asChild>
                     <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="h-4 w-4 mr-2" />
                       Live Demo
                     </a>
-                  </Button>
-                  <Button size="sm" variant="secondary" asChild>
+                  </Button>}
+                  {project.githubUrl && <Button size="sm" variant="secondary" asChild>
                     <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                       <Github className="h-4 w-4 mr-2" />
                       Code
                     </a>
-                  </Button>
+                  </Button>}
                 </div>
               </div>
               <CardContent className="p-6">

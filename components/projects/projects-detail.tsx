@@ -63,7 +63,7 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
           <p className="text-xl text-gray-600 mb-8 leading-relaxed">{project.description}</p>
 
           <div className="flex flex-wrap gap-4 mb-8">
-            <Button
+            {project.liveUrl && <Button
               asChild
               className="bg-gradient-to-r from-cyan-600 to-purple-600 hover:from-cyan-700 hover:to-purple-700"
             >
@@ -71,13 +71,13 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
                 <ExternalLink className="h-4 w-4 mr-2" />
                 View Live Project
               </a>
-            </Button>
-            <Button variant="outline" asChild className="border-gray-300 hover:bg-gray-50 bg-transparent text-black">
+            </Button>}
+            {project.githubUrl && <Button variant="outline" asChild className="border-gray-300 hover:bg-gray-50 bg-transparent text-black">
               <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
                 <Github className="h-4 w-4 mr-2" />
                 View Source Code
               </a>
-            </Button>
+            </Button>}
           </div>
 
           <div className="relative overflow-hidden rounded-xl shadow-lg mb-12">
@@ -108,7 +108,7 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
 
             {/* Features */}
             <section>
-              <h2 className="text-2xl font-bold font-orbitron mb-6 text-gray-900">Key Features</h2>
+              <h2 className="text-2xl font-bold font-orbitron mb-6 text-gray-900">Key Contributions & Features</h2>
               <div className="grid md:grid-cols-2 gap-4">
                 {project.features.map((feature, index) => (
                   <div key={index} className="flex items-start space-x-3">
@@ -121,11 +121,11 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
 
             {/* Challenges & Solutions */}
             <section>
-              <h2 className="text-2xl font-bold font-orbitron mb-6 text-gray-900">Challenges & Solutions</h2>
+              <h2 className="text-2xl font-bold font-orbitron mb-6 text-gray-900">Focus & Contributions</h2>
               <div className="grid md:grid-cols-2 gap-8">
                 <Card className="border-red-200 bg-red-50/50">
                   <CardContent className="p-6">
-                    <h3 className="text-lg font-semibold mb-4 text-red-800">Challenges</h3>
+                    <h3 className="text-lg font-semibold mb-4 text-red-800">Focus</h3>
                     <ul className="space-y-2">
                       {project.challenges.map((challenge, index) => (
                         <li key={index} className="text-red-700 text-sm">
@@ -137,7 +137,7 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
                 </Card>
                 <Card className="border-green-200 bg-green-50/50">
                   <CardContent className="p-6">
-                    <h3 className="text-lg font-semibold mb-4 text-green-800">Solutions</h3>
+                    <h3 className="text-lg font-semibold mb-4 text-green-800">Contributions</h3>
                     <ul className="space-y-2">
                       {project.solutions.map((solution, index) => (
                         <li key={index} className="text-green-700 text-sm">
@@ -151,7 +151,7 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
             </section>
 
             {/* Gallery */}
-            <section>
+            {project.images.length > 0 && <section>
               <h2 className="text-2xl font-bold font-orbitron mb-6 text-gray-900">Project Gallery</h2>
               <div className="grid md:grid-cols-2 gap-6">
                 {project.images.map((image, index) => (
@@ -166,7 +166,7 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
                   </div>
                 ))}
               </div>
-            </section>
+            </section>}
           </div>
 
           {/* Sidebar */}
@@ -191,7 +191,7 @@ export function ProjectDetail({ project }: ProjectDetailProps) {
                 <h3 className="text-lg font-semibold mb-4 text-gray-900">Project Details</h3>
                 <div className="space-y-3">
                   <div>
-                    <span className="text-sm font-medium text-gray-500">Client:</span>
+                    <span className="text-sm font-medium text-gray-500">Project Type:</span>
                     <p className="text-gray-900">{project.client}</p>
                   </div>
                   <div>

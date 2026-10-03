@@ -6,11 +6,11 @@ import { ContactInfo } from "@/components/contact/contact-info"
 export const metadata: Metadata = {
   title: "Contact - Get In Touch",
   description:
-    "Ready to start your next project? Get in touch to discuss how we can work together to bring your ideas to life.",
+    "Contact Rashmika Rupasinghe about internship opportunities and collaboration in software testing, data analytics, AI, and project management.",
   openGraph: {
     title: "Contact Rashmika - Let's Connect",
     description:
-      "Ready to start your next project? Get in touch to discuss how we can work together to bring your ideas to life.",
+      "Connect with Rashmika Rupasinghe, an IT graduate from SLIIT with software quality testing, data analytics, and AI skills.",
   },
 }
 

@@ -7,7 +7,7 @@ import { Input } from "@/components/ui/input"
 
 export function ContactManager() {
   const [contactData, setContactData] = useState({
-    email: "wark.rupasinghe.work@gmail.com",
+    email: "rashmikarupasinghe27@gmail.com",
     phone: "+94 761 941 017",
     location: "Colombo, Sri Lanka",
   })

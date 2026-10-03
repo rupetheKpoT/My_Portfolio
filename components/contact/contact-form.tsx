@@ -68,7 +68,7 @@ export function ContactForm() {
           <CardContent className="p-8">
             <CheckCircle className="h-16 w-16 text-green-600 mx-auto mb-4" />
             <h3 className="text-2xl font-bold text-gray-900 mb-2">Message Sent!</h3>
-            <p className="text-gray-600">Thank you for reaching out. I'll get back to you within 24 hours.</p>
+            <p className="text-gray-600">Thank you for reaching out. I'll get back to you as soon as possible.</p>
           </CardContent>
         </Card>
       </section>
@@ -145,7 +145,7 @@ export function ContactForm() {
                   rows={6}
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="Tell me about your project or how I can help you..."
+                  placeholder="Tell me about your opportunity, project, or how I can contribute..."
                   className="border-gray-300 focus:border-cyan-500 focus:ring-cyan-500"
                 />
               </div>

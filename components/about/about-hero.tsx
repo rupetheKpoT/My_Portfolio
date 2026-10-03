@@ -16,20 +16,20 @@ export function AboutHero() {
             </h1>
 
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              I'm a Data Science student at SLIIT with a passion for turning complex data into actionable insights. My expertise spans machine learning, computer vision, predictive modeling, and AI-powered solutions.
+              I'm Rashmika Rupasinghe, a BSc (Hons) in IT graduate specializing in Data Science at SLIIT (2022–2026). My skills span software quality testing, Python, SQL, Power BI, machine learning, and project management.
             </p>
 
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              From building Power BI dashboards to developing AI recommendation systems and healthcare analytics solutions, I combine analytical thinking with creative problem-solving. I'm committed to leveraging data science and machine learning to address real-world challenges and create meaningful impact.
+              I performed manual, smoke, and black box testing for PortalKit, wrote and executed test cases, and documented bugs before UAT release. My projects also include cricket analytics, predictive models, and AI recommendation systems. I'm currently preparing for the ISTQB CTFL certification.
             </p>
 
-            <a href="/Rashmika%20Rupasinghe_Resume.pdf" download="Rashmika Rupasinghe_Resume.pdf">
+            <a href="/Rashmika%20Rupasinghe_CV.pdf" download="Rashmika Rupasinghe_CV.pdf">
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-cyan-600 to-purple-600 hover:from-cyan-700 hover:to-purple-700"
               >
                 <Download className="mr-2 h-5 w-5" />
-                Download Resume
+                Download CV
               </Button>
             </a>
           </div>
@@ -39,7 +39,7 @@ export function AboutHero() {
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-purple-600 rounded-2xl blur-2xl opacity-20"></div>
               <Image
                 src="/me.png"
-                alt="Rashmika - Data Scientist"
+                alt="Rashmika Rupasinghe - IT Graduate"
                 width={400}
                 height={500}
                 className="relative z-10 w-full rounded-2xl shadow-2xl"

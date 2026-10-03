@@ -7,14 +7,14 @@ export function ContactInfo() {
     {
       icon: Mail,
       title: "Email",
-      value: "wark.rupasinghe.work@gmail.com",
+      value: "rashmikarupasinghe27@gmail.com",
       description: "Send me an email anytime",
     },
     {
       icon: Phone,
       title: "Phone",
       value: "+94 76 194 1017",
-      description: "Mon-Fri from 9am to 6pm",
+      description: "Call or WhatsApp",
     },
     {
       icon: MapPin,
@@ -24,9 +24,9 @@ export function ContactInfo() {
     },
     {
       icon: Clock,
-      title: "Response Time",
-      value: "Within 24 hours",
-      description: "Usually much faster",
+      title: "Opportunities",
+      value: "Internships & Collaboration",
+      description: "Software testing, data analytics, and AI",
     },
   ]
 
@@ -41,8 +41,8 @@ export function ContactInfo() {
         <div className="mb-12">
           <h2 className="text-3xl font-bold font-orbitron mb-4 text-gray-900">Let's Connect</h2>
           <p className="text-gray-600 leading-relaxed">
-            I'm always excited to work on new projects and collaborate with amazing people. Whether you have a project
-            in mind, need technical consultation, or just want to say hello, I'd love to hear from you.
+            I'm interested in internship opportunities and collaborations in software quality assurance, data analytics,
+            machine learning, and project management. I'd love to discuss how my skills can support your team.
           </p>
         </div>
 
@@ -87,10 +87,10 @@ export function ContactInfo() {
         </Card>
 
         <div className="mt-8 p-6 bg-cyan-50 rounded-lg border border-cyan-200">
-          <h3 className="font-semibold text-gray-900 mb-2">Quick Response Guarantee</h3>
+          <h3 className="font-semibold text-gray-900 mb-2">Internship Opportunities</h3>
           <p className="text-sm text-gray-600">
-            I understand that time is valuable. That's why I guarantee a response to all inquiries within 24 hours,
-            usually much faster. For urgent matters, don't hesitate to call.
+            I'm interested in applying my software testing, analytical, and project management skills in a team.
+            Reach out by email or phone to discuss an opportunity.
           </p>
         </div>
       </div>

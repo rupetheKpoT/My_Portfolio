@@ -7,8 +7,8 @@ export function AboutPreview() {
   const skills = [
     {
       icon: Code,
-      title: "Machine Learning & AI",
-      description: "Building intelligent systems using Python, PyTorch, and state-of-the-art AI/ML models.",
+      title: "Software Quality Testing",
+      description: "Manual, smoke, and black box testing, test case writing, bug reporting, and Selenium automation skills.",
     },
     {
       icon: Zap,
@@ -17,8 +17,8 @@ export function AboutPreview() {
     },
     {
       icon: Palette,
-      title: "Computer Vision & NLP",
-      description: "Developing AI-powered solutions for image processing and natural language understanding.",
+      title: "Machine Learning & AI",
+      description: "Building predictive models and recommendation systems using Python, PyTorch, and machine learning.",
     },
   ];
 
@@ -33,7 +33,7 @@ export function AboutPreview() {
             </span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Data Science undergraduate at SLIIT specializing in machine learning, predictive modeling, and computer vision. I transform complex data into actionable insights and build impactful AI solutions that solve real-world challenges.
+            BSc (Hons) in IT graduate specializing in Data Science at SLIIT (2022–2026). I combine software quality testing, data analytics, and machine learning with project management experience to build reliable, impactful software solutions.
           </p>
         </div>
 

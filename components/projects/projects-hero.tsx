@@ -14,7 +14,7 @@ export function ProjectsHero() {
           <span className="bg-gradient-to-r from-cyan-600 to-purple-600 bg-clip-text text-transparent">Projects</span>
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-          A showcase of my journey as a data scientist — building intelligent AI solutions, predictive models, and data-driven insights. From computer vision to machine learning, here's a glimpse into the problems I've solved using advanced analytics and AI technologies.
+          Explore my software testing, data analytics, and AI work: PortalKit quality assurance, Criclytics cricket analytics, Retention Radar predictive modeling, Instrument Hub recommendations, and MedIntel competition work.
         </p>
       </div>
     </section>

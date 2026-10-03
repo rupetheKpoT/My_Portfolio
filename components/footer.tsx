@@ -19,7 +19,7 @@ export function Footer() {
               RASHMIKA
             </h3>
             <p className="text-gray-600 mb-6 max-w-md leading-relaxed">
-              Data Science student and AI/ML enthusiast passionate about turning complex data into actionable insights. Specializing in machine learning, computer vision, and predictive modeling.
+              IT graduate specializing in Data Science at SLIIT, with skills in software quality testing, data analytics, machine learning, and project management. Focused on reliable software and actionable insights.
             </p>
             <div className="flex space-x-4">
               <Button variant="ghost" size="icon" className="hover:text-cyan-600 hover:bg-cyan-50" asChild>
@@ -33,7 +33,7 @@ export function Footer() {
                 </a>
               </Button>
               <Button variant="ghost" size="icon" className="hover:text-cyan-600 hover:bg-cyan-50" asChild>
-                <a href="mailto:wark.rupasinghe.work@gmail.com">
+                <a href="mailto:rashmikarupasinghe27@gmail.com">
                   <Mail className="h-5 w-5" />
                 </a>
               </Button>
@@ -74,19 +74,19 @@ export function Footer() {
 
           {/* Services */}
           <div className="flex flex-col items-end text-right">
-            <h4 className="text-lg font-semibold text-gray-900 mb-4">Services</h4>
+            <h4 className="text-lg font-semibold text-gray-900 mb-4">Skills</h4>
             <ul className="space-y-3">
+              <li className="text-gray-600">Software Quality Testing</li>
               <li className="text-gray-600">Data Analytics & Visualization</li>
               <li className="text-gray-600">Machine Learning & AI Solutions</li>
               <li className="text-gray-600">Project Management</li>
-              <li className="text-gray-600">Web Development</li>
-              <li className="text-gray-600">Business research & consulting</li>
+              <li className="text-gray-600">Business Research</li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-gray-200 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-500 text-sm">© 2025 Rashmika Rupasinghe. All rights reserved.</p>
+          <p className="text-gray-500 text-sm">© 2026 Rashmika Rupasinghe. All rights reserved.</p>
           <div className="flex items-center justify-end  mt-4 md:mt-0 space-x-4">
             <p className="text-gray-500 text-sm flex items- text-left justify-end">
               {/* Made with <Heart className="h-4 w-4 mx-1 text-red-500" /> using Next.js */}

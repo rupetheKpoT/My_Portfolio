@@ -3,13 +3,13 @@ import { ProjectsHero } from "@/components/projects/projects-hero"
 import { ProjectsGrid } from "@/components/projects/projects-grid"
 
 export const metadata: Metadata = {
-  title: "Projects - Rashmika Rupasinghe | AI/ML Portfolio",
+  title: "Projects - Rashmika Rupasinghe | QA, Data Analytics & AI",
   description:
-    "Explore my portfolio of machine learning, AI, and data science projects, featuring innovations in computer vision, predictive modeling, and analytics.",
+    "Explore PortalKit software testing, Criclytics Power BI analytics, Retention Radar predictive modeling, Instrument Hub recommendations, and MedIntel.",
   openGraph: {
-    title: "Projects - Rashmika's AI/ML Portfolio",
+    title: "Projects - Rashmika's QA, Data Analytics & AI Portfolio",
     description:
-      "Discover my AI and machine learning projects including Criclytics, MedIntel, FoodLensAI, and more data science solutions.",
+      "Discover my manual testing, test case writing, bug reporting, Power BI dashboards, predictive models, and AI recommendation projects.",
   },
 }
 

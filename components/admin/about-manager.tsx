@@ -8,12 +8,12 @@ import { Input } from "@/components/ui/input"
 
 export function AboutManager() {
   const [aboutData, setAboutData] = useState({
-    bio: `I'm a Data Science student at SLIIT specializing in machine learning, computer vision, and predictive modeling. My passion lies in transforming complex data into actionable insights and building AI solutions that solve real-world challenges.`,
+    bio: `I'm a BSc (Hons) in IT graduate specializing in Data Science at SLIIT (2022–2026), with skills in software quality testing, data analytics, machine learning, and project management. My PortalKit work included manual, smoke, and black box testing, test case writing, and bug reporting.`,
     skills:
-      "Python, R, SQL, PyTorch, Machine Learning, Computer Vision, Power BI, OpenCV, Google GenAI, Flask, MongoDB, Firebase",
-    experience: "1+",
-    projects: "5+",
-    clients: "3+",
+      "Manual Testing, Smoke Testing, Black Box Testing, Test Case Writing, Bug Reporting, Selenium, Python, R, SQL, JavaScript, PyTorch, Power BI, Hugging Face Transformers, Azure, AWS, Docker, Jira",
+    experience: "April–October 2025; June–December 2024",
+    projects: "5",
+    clients: "Not specified in CV",
   })
 
   const handleSave = () => {

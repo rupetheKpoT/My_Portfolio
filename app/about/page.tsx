@@ -5,13 +5,13 @@ import { AboutSkills } from "@/components/about/about-skills"
 import { AboutExperience } from "@/components/about/about-experience"
 
 export const metadata: Metadata = {
-  title: "About - Rashmika Rupasinghe | Data Science & AI",
+  title: "About - Rashmika Rupasinghe | Software Testing & Data Science",
   description:
-    "Learn about Rashmika Rupasinghe, a Data Science student at SLIIT specializing in machine learning, computer vision, and predictive modeling. Passionate about turning data into actionable insights.",
+    "Learn about Rashmika Rupasinghe, an IT graduate specializing in Data Science at SLIIT, with software testing, analytics, AI, and project management skills.",
   openGraph: {
-    title: "About Rashmika - Data Science & AI Specialist",
+    title: "About Rashmika - Software Testing & Data Science",
     description:
-      "Discover my journey as a data scientist, my AI/ML projects, skills in Python, PyTorch, Power BI, and passion for building impactful AI solutions.",
+      "Explore my education, PortalKit testing work, VSIS internship, QA skills, Azure Fundamentals certification, and preparation for ISTQB CTFL.",
   },
 }
 

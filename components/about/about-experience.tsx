@@ -17,15 +17,15 @@ export function AboutExperience() {
       location: "Remote",
       period: "June 2024 – December 2024",
       description:
-        "Conducted research on business models and IT strategies, contributing to improved sales insights and decision-making processes. Analyzed market trends and competitive landscapes to provide actionable business intelligence.",
+        "Conducted research on business models and IT strategies, contributing to improved sales insights and decision-making processes.",
     },
   ]
 
   const stats = [
-    { number: "5+", label: "AI/ML Projects" },
-    { number: "1+", label: "Years Experience" },
-    { number: "8+", label: "Certifications Completed" },
-    { number: "100%", label: "Commitment to Learning" },
+    { number: "5", label: "Projects & Competition Work" },
+    { number: "2", label: "Professional Roles" },
+    { number: "AZ-900", label: "Azure Fundamentals Certified" },
+    { number: "CTFL", label: "Currently Preparing" },
   ]
 
   return (

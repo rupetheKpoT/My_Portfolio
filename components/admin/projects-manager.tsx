@@ -10,18 +10,18 @@ import { Textarea } from "@/components/ui/textarea"
 import { Badge } from "@/components/ui/badge"
 import { Plus, Edit, Trash2 } from "lucide-react"
 
+import { portfolioProjects } from "@/lib/portfolio-projects"
+
 export function ProjectsManager() {
-  const [projects, setProjects] = useState([
-    {
-      id: 1,
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with React, Node.js, and PostgreSQL.",
-      technologies: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      category: "fullstack",
-      liveUrl: "#",
-      githubUrl: "#",
-    },
-  ])
+  const [projects, setProjects] = useState(portfolioProjects.map((project) => ({
+    id: project.id,
+    title: project.title,
+    description: project.description,
+    technologies: project.technologies,
+    category: project.category,
+    liveUrl: project.liveUrl,
+    githubUrl: project.githubUrl,
+  })))
 
   const [editingProject, setEditingProject] = useState<any>(null)
   const [showForm, setShowForm] = useState(false)

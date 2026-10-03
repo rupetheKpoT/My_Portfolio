@@ -5,39 +5,10 @@ import { ExternalLink, Github } from "lucide-react"
 import Link from "next/link"
 import Image from "next/image"
 
+import { portfolioProjects } from "@/lib/portfolio-projects"
+
 export function ProjectsPreview() {
-  const featuredProjects = [
-    {
-      id: 1,
-      title: "Criclytics",
-      description:
-        "Created an engaging Power BI dashboard for cricket analytics using real-world data. Gained insights into game strategies, player performances, and trend analysis with streamlined data processing.",
-      image: "/cricklytics.jpg",
-      technologies: ["Power BI", "Data Analytics", "Visualization", "Excel"],
-      liveUrl: "https://1drv.ms/v/c/a86c177745b40270/IQABiYBi5Z5VT6GBzY55CNkzAeJE8P73TLHqgY8DBXZmRsw?e=MLjzJI",
-      githubUrl: "https://github.com/IT22106360/Criclytics",
-    },
-    {
-      id: 2,
-      title: "MedIntel",
-      description:
-        "AI-based antibiotic recommendation system addressing antimicrobial resistance. Selected to semifinals at Brainstorm 2025. Developed ML-driven engine combining symptoms, patient data, and clinical guidelines.",
-      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=300&fit=crop",
-      technologies: ["Python", "Machine Learning", "Healthcare AI", "Data Science"],
-      liveUrl: "",
-      githubUrl: "",
-    },
-    {
-      id: 3,
-      title: "FoodLensAI",
-      description:
-        "Leading development of an AI-powered system for sustainability, compliance, health impact, and market intelligence insights from U.S. food & dietary supplement labels. Developing multimodal extraction and sustainability analysis.",
-      image: "/foodlens.jpg",
-      technologies: ["PyTorch", "Computer Vision", "NLP", "Google GenAI"],
-      liveUrl: "https://1drv.ms/v/c/a86c177745b40270/IQAr8jOR9t6LSJgjsFvX_wIYAY1WZgMNOqi1c51NFvuTCPI?e=0ks49K",
-      githubUrl: "",
-    },
-  ]
+  const featuredProjects = portfolioProjects.slice(0, 3)
 
   return (
     <section className="py-20 px-4 bg-gray-50">
@@ -48,7 +19,7 @@ export function ProjectsPreview() {
             <span className="bg-gradient-to-r from-cyan-600 to-purple-600 bg-clip-text text-transparent">Projects</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            A showcase of my latest work, demonstrating expertise in machine learning, data analytics, and AI-driven solutions.
+            A selection of my software testing, data analytics, and AI work, including PortalKit, Criclytics, and MedIntel.
           </p>
         </div>
 

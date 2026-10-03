@@ -8,6 +8,8 @@ import { ExternalLink, Github } from "lucide-react"
 import Image from "next/image"
 import { useRouter } from "next/navigation"
 
+import { portfolioProjects } from "@/lib/portfolio-projects"
+
 export function ProjectsGrid() {
   const [filter, setFilter] = useState("all");
   const route = useRouter();
@@ -16,66 +18,11 @@ export function ProjectsGrid() {
     route.push(`/projects/${id}`);
   }
 
-  const projects = [
-    {
-      id: 1,
-      title: "Criclytics",
-      description:
-        "Created an engaging Power BI dashboard for cricket analytics using real-world data. Gained insights into game strategies, player performances, and trend analysis with streamlined data processing.",
-      image: "/cricklytics.jpg",
-      technologies: ["Power BI", "Data Analytics", "Visualization", "Excel"],
-      category: "analytics",
-      liveUrl: "https://1drv.ms/v/c/a86c177745b40270/IQABiYBi5Z5VT6GBzY55CNkzAeJE8P73TLHqgY8DBXZmRsw?e=MLjzJI",
-      githubUrl: "https://github.com/IT22106360/Criclytics",
-    },
-    {
-      id: 2,
-      title: "MedIntel",
-      description:
-        "AI-based antibiotic recommendation system addressing antimicrobial resistance. Selected to semifinals at Brainstorm 2025. Developed ML-driven engine combining symptoms, patient data, and clinical guidelines.",
-      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=400&h=300&fit=crop",
-      technologies: ["Python", "Machine Learning", "Healthcare AI", "Data Science"],
-      category: "ml",
-      liveUrl: "",
-      githubUrl: "",
-    },
-    {
-      id: 3,
-      title: "FoodLensAI - Ongoing Project",
-      description:
-        "Leading development of an AI-powered system for sustainability, compliance, health impact, and market intelligence insights from U.S. food & dietary supplement labels. Developing multimodal extraction and sustainability analysis.",
-      image: "/foodlens.jpg",
-      technologies: ["PyTorch", "Computer Vision", "NLP", "Google GenAI", "Roboflow"],
-      category: "ml",
-      liveUrl: "https://1drv.ms/v/c/a86c177745b40270/IQAr8jOR9t6LSJgjsFvX_wIYAY1WZgMNOqi1c51NFvuTCPI?e=0ks49K",
-      githubUrl: "",
-    },
-    {
-      id: 4,
-      title: "Retention Radar",
-      description:
-        "Led a hiring analytics project for data scientists with data cleaning and handling imbalanced datasets. Built and deployed predictive models (Decision Trees, Random Forest, SVM, Logistic Regression) using Flask.",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop",
-      technologies: ["Python", "Scikit-learn", "Flask", "Predictive Modeling"],
-      category: "ml",
-      liveUrl: "",
-      githubUrl: "https://github.com/IT22106360/QuantaML-FDM-Employee-Retention",
-    },
-    {
-      id: 5,
-      title: "Instrument Hub",
-      description:
-        "Developed a personalized e-commerce recommendation system for musical instruments using machine learning. Applied collaborative and content-based filtering to improve recommendation accuracy.",
-      image: "/instrument-hub.jpg",
-      technologies: ["Python", "Machine Learning", "Recommendation Systems", "React.js"],
-      category: "ml",
-      liveUrl: "",
-      githubUrl: "https://github.com/ascottR/Recommendation_SYS",
-    },
-  ]
+  const projects = portfolioProjects
 
   const categories = [
     { id: "all", label: "All Projects" },
+    { id: "qa", label: "Software Testing" },
     { id: "ml", label: "Machine Learning" },
     { id: "analytics", label: "Data Analytics" },
   ]

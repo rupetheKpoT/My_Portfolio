@@ -13,14 +13,14 @@ export function ContactPreview() {
             <span className="bg-gradient-to-r from-cyan-600 to-purple-600 bg-clip-text text-transparent">Connect</span>
           </h2>
           <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
-            Interested in discussing data science, AI projects, or collaboration opportunities? Let's connect and explore what we can build together!
+            Interested in software testing, data analytics, AI projects, or internship opportunities? Let's connect and discuss how I can contribute.
           </p>
         </div>
 
         <div className="grid md:grid-cols-3 gap-6 mb-12">
           {[
-            { icon: Mail, title: "Email Me", description: "wark.rupasinghe.work@gmail.com" },
-            { icon: MessageSquare, title: "Let's Chat", description: "About AI & Data Science" },
+            { icon: Mail, title: "Email Me", description: "rashmikarupasinghe27@gmail.com" },
+            { icon: MessageSquare, title: "Let's Chat", description: "About QA, Data & AI" },
             { icon: Calendar, title: "LinkedIn", description: "Connect & collaborate" },
           ].map((item, index) => (
             <Card key={index} className="group hover:shadow-lg transition-shadow border-gray-200 hover:border-cyan-200">

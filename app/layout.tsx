@@ -9,14 +9,19 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const orbitron = Orbitron({ subsets: ["latin"], variable: "--font-orbitron" });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://rashmika.maximumeffortlk.site"),
   title: {
-    default: "Rashmika Rupasinghe - Data Scientist | AI/ML | Portfolio",
+    default: "Rashmika Rupasinghe - Software Testing | Data Science | Portfolio",
     template: "%s | Rashmika Portfolio",
   },
   description:
-    "Data Science student specializing in machine learning, computer vision, and predictive modeling. Passionate about turning data into actionable insights.",
+    "IT graduate specializing in Data Science at SLIIT, with experience in software quality testing, data analytics, AI projects, and project management.",
   keywords: [
     "Rashmika Rupasinghe",
+    "Software Quality Assurance",
+    "Software Testing",
+    "Manual Testing",
+    "Selenium",
     "Data Science",
     "Machine Learning",
     "AI",
@@ -25,32 +30,31 @@ export const metadata: Metadata = {
     "Portfolio",
     "Data Analytics",
   ],
-  authors: [{ name: "Rashmika Rupasinghe", url: "https://rashmika-portfolio.com" }],
+  authors: [{ name: "Rashmika Rupasinghe", url: "https://rashmika.maximumeffortlk.site" }],
   creator: "Rashmika Rupasinghe",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://rashmika-portfolio.com",
+    url: "https://rashmika.maximumeffortlk.site",
     siteName: "Rashmika Portfolio",
-    title: "Rashmika Rupasinghe - Data Scientist & AI Enthusiast",
+    title: "Rashmika Rupasinghe - Software Testing & Data Science",
     description:
-      "Data Science student at SLIIT with expertise in machine learning, computer vision, and AI-powered solutions.",
+      "SLIIT IT graduate with skills in manual testing, test case writing, bug reporting, Selenium, data analytics, and machine learning.",
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Rashmika Rupasinghe - Data Scientist",
+        alt: "Rashmika Rupasinghe - Software Testing & Data Science",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rashmika Rupasinghe - Data Scientist & AI Specialist",
+    title: "Rashmika Rupasinghe - Software Testing & Data Science",
     description:
-      "Data Science student at SLIIT specializing in machine learning, computer vision, and AI solutions.",
+      "IT graduate specializing in Data Science, with software testing experience, analytics projects, and AI solutions.",
     images: ["/og-image.jpg"],
-    creator: "@rashmika_data",
   },
   robots: {
     index: true,
@@ -82,8 +86,8 @@ export default function RootLayout({
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="icon" href="/favicon.png" sizes="any" type="image/png" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <meta name="description" content="Data Science student and AI/ML enthusiast portfolio by Rashmika Rupasinghe." />
-        <meta name="keywords" content="Rashmika Rupasinghe, Data Science, Machine Learning, AI, Python, Portfolio" />
+        <meta name="description" content="Software quality testing and Data Science portfolio by Rashmika Rupasinghe, an IT graduate from SLIIT." />
+        <meta name="keywords" content="Rashmika Rupasinghe, Software Testing, Quality Assurance, Selenium, Data Science, Machine Learning, Python, Portfolio" />
         <meta name="author" content="Rashmika Rupasinghe" />
 
       </head>

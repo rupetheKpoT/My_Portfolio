@@ -33,14 +33,14 @@ export function HeroSection() {
         <div className="flex-1 w-full">
           <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold font-orbitron mb-6 leading-tight">
             <span className="bg-gradient-to-r from-cyan-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-              DATA SCIENCE
+              SOFTWARE
             </span>
             <br />
-            <span className="text-gray-900">INNOVATOR</span>
+            <span className="text-gray-900">QUALITY</span>
           </h1>
 
           <p className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl leading-relaxed mx-auto lg:mx-0">
-            Turning complex data into actionable insights and building impactful AI solutions through machine learning and data-driven innovation.
+            IT graduate specializing in Data Science at SLIIT, with hands-on software testing experience and skills in test case writing, bug reporting, Selenium, and AI solutions.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start items-center mb-12">
@@ -103,7 +103,7 @@ export function HeroSection() {
               className="hover:text-cyan-600 hover:bg-cyan-50 text-black "
               asChild
             >
-              <a href="mailto:wark.rupasinghe.work@gmail.com">
+              <a href="mailto:rashmikarupasinghe27@gmail.com">
                 <Mail className="h-6 w-6" />
               </a>
             </Button>
@@ -148,7 +148,7 @@ export function HeroSection() {
           <div className="w-56 h-56 sm:w-64 sm:h-64 lg:w-72 lg:h-72 xl:w-96 xl:h-96 relative rounded-full overflow-hidden border-4 border-cyan-500 shadow-lg">
             <Image
               src="/me.png"
-              alt="Developer Portrait"
+              alt="Rashmika Rupasinghe"
               fill
               style={{ objectFit: "cover" }}
               priority
