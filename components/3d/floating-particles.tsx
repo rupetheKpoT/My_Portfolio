@@ -36,7 +36,7 @@ export function FloatingParticles() {
 
         // Update instance matrix
         const matrix = new THREE.Matrix4()
-        matrix.setPosition(...particle.position)
+        matrix.setPosition(particle.position[0], particle.position[1], particle.position[2])
         matrix.scale(new THREE.Vector3(particle.scale, particle.scale, particle.scale))
         meshRef.current!.setMatrixAt(index, matrix)
       })

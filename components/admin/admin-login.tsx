@@ -32,8 +32,10 @@ export function AdminLogin() {
 
       if (response.ok) {
         router.push("/admin")
+        router.refresh()
       } else {
-        setError("Invalid credentials")
+        const data = await response.json()
+        setError(data.error ?? "Login failed")
       }
     } catch (error) {
       setError("Login failed")

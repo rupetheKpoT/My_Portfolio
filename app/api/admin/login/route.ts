@@ -1,29 +1,38 @@
 import { type NextRequest, NextResponse } from "next/server"
 import { cookies } from "next/headers"
+import {
+  adminCookieName,
+  adminSessionMaxAge,
+  createAdminSession,
+  isAdminConfigured,
+  verifyAdminCredentials,
+} from "@/lib/admin-auth"
 
-const ADMIN_CREDENTIALS = {
-  username: "tonystark",
-  password: "evendeadiamthehero@2025",
-}
+export const runtime = "nodejs"
 
 export async function POST(request: NextRequest) {
+  if (!isAdminConfigured()) {
+    return NextResponse.json({ error: "Admin access is not configured" }, { status: 503 })
+  }
+
   try {
     const { username, password } = await request.json()
 
-    if (username === ADMIN_CREDENTIALS.username && password === ADMIN_CREDENTIALS.password) {
+    if (verifyAdminCredentials(username, password)) {
       const cookieStore = await cookies()
-      cookieStore.set("admin-auth", "true", {
+      cookieStore.set(adminCookieName, createAdminSession(), {
         httpOnly: true,
         secure: process.env.NODE_ENV === "production",
         sameSite: "strict",
-        maxAge: 60 * 60 * 24, // 24 hours
+        maxAge: adminSessionMaxAge,
+        path: "/",
       })
 
       return NextResponse.json({ success: true })
     } else {
       return NextResponse.json({ error: "Invalid credentials" }, { status: 401 })
     }
-  } catch (error) {
-    return NextResponse.json({ error: "Login failed" }, { status: 500 })
+  } catch {
+    return NextResponse.json({ error: "Invalid login request" }, { status: 400 })
   }
 }

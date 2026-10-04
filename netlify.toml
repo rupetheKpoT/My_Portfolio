@@ -1,1 +1,8 @@
-NPM_FLAGS = "--legacy-peer-deps"
+# Netlify automatically installs its current Next.js adapter for this app.
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "24"
+  NPM_FLAGS = "--legacy-peer-deps"

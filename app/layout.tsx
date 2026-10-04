@@ -4,12 +4,13 @@ import { Inter, Orbitron } from "next/font/google";
 import "./globals.css";
 import { Navigation } from "@/components/navigation";
 import { Footer } from "@/components/footer";
+import { siteUrl } from "@/lib/site-url";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const orbitron = Orbitron({ subsets: ["latin"], variable: "--font-orbitron" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://rashmika.maximumeffortlk.site"),
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Rashmika Rupasinghe - Software Testing | Data Science | Portfolio",
     template: "%s | Rashmika Portfolio",
@@ -30,12 +31,12 @@ export const metadata: Metadata = {
     "Portfolio",
     "Data Analytics",
   ],
-  authors: [{ name: "Rashmika Rupasinghe", url: "https://rashmika.maximumeffortlk.site" }],
+  authors: [{ name: "Rashmika Rupasinghe", url: siteUrl }],
   creator: "Rashmika Rupasinghe",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://rashmika.maximumeffortlk.site",
+    url: siteUrl,
     siteName: "Rashmika Portfolio",
     title: "Rashmika Rupasinghe - Software Testing & Data Science",
     description:

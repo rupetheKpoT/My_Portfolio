@@ -122,7 +122,7 @@ function ProjectForm({ project, onSave, onCancel }: any) {
     e.preventDefault()
     onSave({
       ...formData,
-      technologies: formData.technologies.split(",").map((t) => t.trim()),
+      technologies: formData.technologies.split(",").map((t: string) => t.trim()),
     })
   }
 

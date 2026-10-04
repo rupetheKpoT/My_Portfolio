@@ -48,6 +48,9 @@ pnpm-debug.log*
 # vercel
 .vercel
 
+# Netlify CLI state and generated functions
+/.netlify/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

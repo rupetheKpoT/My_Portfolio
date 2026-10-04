@@ -16,15 +16,14 @@ export function SpiderWeb() {
   })
 
   // Create web structure
-  const webPoints = []
-  const center = [0, 0, 0]
+  const webPoints: [number, number, number][][] = []
   const rings = 8
   const spokes = 12
 
   // Create concentric rings
   for (let ring = 1; ring <= rings; ring++) {
     const radius = ring * 0.5
-    const ringPoints = []
+    const ringPoints: [number, number, number][] = []
 
     for (let spoke = 0; spoke < spokes; spoke++) {
       const angle = (spoke / spokes) * Math.PI * 2
@@ -43,7 +42,7 @@ export function SpiderWeb() {
   // Create spokes
   for (let spoke = 0; spoke < spokes; spoke++) {
     const angle = (spoke / spokes) * Math.PI * 2
-    const spokePoints = []
+    const spokePoints: [number, number, number][] = []
 
     for (let ring = 0; ring <= rings; ring++) {
       const radius = ring * 0.5

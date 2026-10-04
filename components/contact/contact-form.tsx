@@ -26,19 +26,25 @@ export function ContactForm() {
     setError(null)
 
     try {
+      const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY
+      if (!accessKey) {
+        setError("The contact form is currently unavailable. Please use the email address listed on this page.")
+        return
+      }
+
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          access_key: "b3023eda-6ec4-4549-8e9e-3a5b52b6ade7",
+          access_key: accessKey,
           ...formData,
         }),
       })
 
       const data = await res.json()
 
-      if (!res.ok) {
-        setError(data.error ?? "Something went wrong. Please try again.")
+      if (!res.ok || !data.success) {
+        setError(data.message ?? data.error ?? "Something went wrong. Please try again.")
         return
       }
 

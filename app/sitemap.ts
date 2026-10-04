@@ -1,33 +1,34 @@
 import type { MetadataRoute } from "next"
+import { siteUrl } from "@/lib/site-url"
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://rashmika.maximumeffortlk.site",
+      url: siteUrl,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 1,
     },
     {
-      url: "https://rashmika.maximumeffortlk.site/about",
+      url: `${siteUrl}/about`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: "https://rashmika.maximumeffortlk.site/projects",
+      url: `${siteUrl}/projects`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.9,
     },
     {
-      url: "https://rashmika.maximumeffortlk.site/blog",
+      url: `${siteUrl}/blog`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.7,
     },
     {
-      url: "https://rashmika.maximumeffortlk.site/contact",
+      url: `${siteUrl}/contact`,
       lastModified: new Date(),
       changeFrequency: "yearly",
       priority: 0.6,
