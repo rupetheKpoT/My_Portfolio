@@ -90,7 +90,7 @@ export function Footer() {
           <div className="flex items-center justify-end  mt-4 md:mt-0 space-x-4">
             <p className="text-gray-500 text-sm flex items- text-left justify-end">
               {/* Made with <Heart className="h-4 w-4 mx-1 text-red-500" /> using Next.js */}
-              Maximum Effort
+              ME
             </p>
             <Button variant="ghost" size="icon" onClick={scrollToTop} className="hover:text-cyan-600 hover:bg-cyan-50 text-black bg-cyan-50">
               <ArrowUp className="h-4 w-4" />
