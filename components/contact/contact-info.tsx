@@ -7,7 +7,7 @@ export function ContactInfo() {
     {
       icon: Mail,
       title: "Email",
-      value: "rashmikarupasinghe27@gmail.com",
+      value: "wark.rupasinghe.work@gmail.com",
       description: "Send me an email anytime",
     },
     {

@@ -20,7 +20,7 @@ export function AboutHero() {
             </p>
 
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              I performed manual, smoke, and black box testing for PortalKit, wrote and executed test cases, and documented bugs before UAT release. My projects also include cricket analytics, predictive models, and AI recommendation systems. I'm currently preparing for the ISTQB CTFL certification.
+              I performed manual, smoke, and black box testing for PortalKit, wrote and executed test cases, and documented bugs before UAT release. My projects also include cricket analytics, predictive models, and AI recommendation systems. I have already sat for the ISTQB CTFL v4.0 exam.
             </p>
 
             <a href="/Rashmika%20Rupasinghe_CV.pdf" download="Rashmika Rupasinghe_CV.pdf">

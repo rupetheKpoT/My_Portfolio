@@ -24,8 +24,7 @@ export function AboutExperience() {
   const stats = [
     { number: "5", label: "Projects & Competition Work" },
     { number: "2", label: "Professional Roles" },
-    { number: "AZ-900", label: "Azure Fundamentals Certified" },
-    { number: "CTFL", label: "Currently Preparing" },
+    { number: "ISTQB CTFL v4.0", label: "Already Sat" },
   ]
 
   return (
@@ -37,7 +36,7 @@ export function AboutExperience() {
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mb-16">
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
               <div className="text-4xl font-bold text-transparent bg-gradient-to-r from-cyan-600 to-purple-600 bg-clip-text mb-2">

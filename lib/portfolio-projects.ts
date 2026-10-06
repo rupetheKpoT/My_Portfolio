@@ -5,7 +5,7 @@ export const portfolioProjects = [
     title: "PortalKit",
     description: "Performed manual, smoke, and black box testing for a client–freelancer project management system before UAT release. Wrote and executed test cases, documented bugs, and collaborated with developers to improve software quality.",
     longDescription: "PortalKit is a client–freelancer project management system. My contribution focused on software quality testing before UAT release.\n\nI performed manual, smoke, and black box testing, developed and executed test cases, documented bugs, and worked alongside the development team to enhance software quality.",
-    image: "/placeholder.svg",
+    image: "/portalkit.png",
     images: [] as string[],
     technologies: ["Manual Testing", "Smoke Testing", "Black Box Testing", "Test Cases", "Bug Reporting"],
     category: "qa",

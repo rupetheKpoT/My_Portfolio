@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About Rashmika - Software Testing & Data Science",
     description:
-      "Explore my education, PortalKit testing work, VSIS internship, QA skills, Azure Fundamentals certification, and preparation for ISTQB CTFL.",
+      "Explore my education, PortalKit testing work, VSIS internship, QA skills, and ISTQB CTFL v4.0 exam experience.",
   },
 }
 

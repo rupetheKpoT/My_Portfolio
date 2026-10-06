@@ -33,10 +33,10 @@ export function HeroSection() {
         <div className="flex-1 w-full">
           <h1 className="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold font-orbitron mb-6 leading-tight">
             <span className="bg-gradient-to-r from-cyan-600 via-purple-600 to-pink-600 bg-clip-text text-transparent">
-              SOFTWARE
+              QUALITY
             </span>
             <br />
-            <span className="text-gray-900">QUALITY</span>
+            <span className="text-gray-900">INTELLIGENCE</span>
           </h1>
 
           <p className="text-lg sm:text-xl md:text-2xl text-gray-600 mb-8 max-w-2xl leading-relaxed mx-auto lg:mx-0">
