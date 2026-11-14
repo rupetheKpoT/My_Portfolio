@@ -23,7 +23,7 @@ export function Navigation() {
     { href: "/", label: "Home", icon: Home },
     { href: "/about", label: "About", icon: User },
     { href: "/projects", label: "Projects", icon: Briefcase },
-    // { href: "/blog", label: "Blog", icon: BookOpen },
+    { href: "/blog", label: "Blog", icon: BookOpen },
     { href: "/contact", label: "Contact", icon: Mail },
   ]
 

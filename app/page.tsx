@@ -11,7 +11,7 @@ export default function HomePage() {
       <HeroSection />
       <AboutPreview />
       <ProjectsPreview />
-      {/* <BlogPreview /> */}
+      <BlogPreview />
       <ContactPreview />
     </>
   )

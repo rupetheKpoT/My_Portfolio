@@ -12,7 +12,7 @@ export function BlogHero() {
           My <span className="bg-gradient-to-r from-cyan-600 to-purple-600 bg-clip-text text-transparent">Blog</span>
         </h1>
         <p className="text-xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
-          Thoughts, tutorials, and insights on web development, design, and the ever-evolving world of technology.
+          Articles on software testing principles, test management, quality assurance, and AI.
         </p>
       </div>
     </section>

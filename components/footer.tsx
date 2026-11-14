@@ -59,11 +59,11 @@ export function Footer() {
                   Projects
                 </Link>
               </li>
-              {/* <li>
+              <li>
                 <Link href="/blog" className="text-gray-600 hover:text-cyan-600 transition-colors">
                   Blog
                 </Link>
-              </li> */}
+              </li>
               <li>
                 <Link href="/contact" className="text-gray-600 hover:text-cyan-600 transition-colors">
                   Contact
